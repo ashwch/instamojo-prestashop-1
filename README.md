@@ -9,9 +9,16 @@ Creating an offer
 3. Check "Pay what you want"
 4. In the Advanced Settings section, go to the "Custom Redirection URL", and enter : http://yourdomain.com/modules/instamojo/validation.php
 5. Save the offer
-6. Navigate to the Instamojo Dashboard at https://www.instamojo.com/dashboard/, find your offer, and click on "Custom Fields"
-7. Enter "TransactionId" (without the quotes) as the field name, make it Required, and click Save. Place your mouse pointer on the field name, you'll see something like Field_1111 (the number will be different). Note that down
-8. Copy that into the file here : modules > instamojo > lib > Config.php in the variable TXN_ID_NAME. 
+
+
+Custom Fields
+--------------
+
+Prestashop assigns an id to each shopping cart, which it needs to get back from the Payment Gateway (Instamojo). So, you must create a custom field on Instamojo
+
+1. Navigate to the Instamojo Dashboard at https://www.instamojo.com/dashboard/, find your offer, and click on "Custom Fields"
+2. Enter "TransactionId" (without the quotes) as the field name, make it Required, and click Save. Place your mouse pointer on the field name, you'll see something like Field_1111 (the number will be different). Note that down
+3. Copy that into the file here : modules > instamojo > lib > Config.php in the variable TXN_ID_NAME. 
 
 
 HTML Code
@@ -25,11 +32,6 @@ API parameters
 
 a. Get your API keys from https://www.instamojo.com/developers/
 b. Copy them into the file here : modules > instamojo > lib > Config.php in the corresponding fields
-
-Custom Fields
---------------
-
-Prestashop assigns an id to each shopping cart, which it needs to get back from the Payment Gateway (Instamojo). So, you must create a custom field on Instamojo
 
 
 Installing into Prestashop
