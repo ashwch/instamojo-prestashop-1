@@ -18,7 +18,7 @@ HTML Code
 ---------
 
 a. Get the HTML code for the Instamojo button for your website (it's different for every merchant) by contacting Instamojo.
-b. Put the above HTML code in the file here : modules > instamojo > views > templates > front > instamojo.tpl . Replace the code within the <p> .. </p> tags, that should be enough.
+b. Put the above HTML code in the file here : modules > instamojo > views > templates > front > instamojo.tpl . Replace the code within the `<p> .. </p>` tags, that should be enough.
 
 API parameters
 ---------------
