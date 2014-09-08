@@ -45,9 +45,12 @@ Installing into Prestashop
 
 That's it, you are done with the installation with Prestashop !
 
+This plugin is live at http://daflabs.com , in case you want to check out how (smoothly) it works
+
 If you have a question, write to dev@instamojo.com (not me ;) )
 
 If you want to pay me for this though, you can write to me at me@ankitdaf.com , and I'll send across an Instamojo link ;)
+
 
 License
 --------
