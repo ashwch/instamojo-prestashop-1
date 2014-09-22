@@ -1,6 +1,7 @@
 Installation steps
 ===================
 
+
 Creating a link
 ---------------
 
@@ -25,14 +26,21 @@ HTML Code
 ---------
 
 1. Get the HTML code for the Instamojo button for your website (it's different for every merchant) by finding your link in the Instamojo Dashboard and clicking on "Payment Button".
-2. Put the above HTML code in the file here : `modules > instamojo > views > templates > front > instamojo.tpl`. Replace the code within the `<p> .. </p>` tags. Add the following code to the end of the `href` URL: `?embed=form&data_name={$imname}&data_amount={$imamount}&data_phone={$imphone}&data_email={$imemail}&data_{$imcustom}={$imtid}&data_readonly=data_name&data_readonly=data_amount&data_readonly=data_email&data_readonly=data_{$imcustom}&data_hidden=data_{$imcustom}`. If you follow this step, you can skip the third step.
-3. Alternatively, you can use the file I supplied directly, but with one important change in instamojo.tpl : Replace the link in the href with the correct username, link and `data-token` value.
+2. Put the above HTML code in the file here : `modules > instamojo > views > templates > front > instamojo.tpl`. Replace the code within the `<p> .. </p>` tags. 
+3. Add the following code to the end of the `href` URL: `?embed=form&data_name={$imname}&data_amount={$imamount}&data_phone={$imphone}&data_email={$imemail}&data_{$imcustom}={$imtid}&data_readonly=data_name&data_readonly=data_amount&data_readonly=data_email&data_readonly=data_{$imcustom}&data_hidden=data_{$imcustom}`. If you follow this step, you can skip the fourth step.
+4. Alternatively, you can use the file I supplied directly, but with one important change in instamojo.tpl : Replace the link in the href with the correct username, link and `data-token` value.
+
 
 API parameters
 ---------------
 
 1. Get your API keys by signing into your Instamojo account and visiting: https://www.instamojo.com/developers/
 2. Copy them into the file here : `modules > instamojo > lib > Config.php` in the corresponding fields
+
+
+If you have a question, write to support@instamojo.com and they'll help you out.
+
+If you want to pay the author for this though, you can write to him at me@ankitdaf.com , and he will send across an Instamojo link.
 
 
 Installing into Prestashop
@@ -47,10 +55,6 @@ Installing into Prestashop
 That's it, you are done with the installation with Prestashop!
 
 This plugin is live at http://daflabs.com, in case you want to check out how (smoothly) it works
-
-If you have a question, write to support@instamojo.com and they'll help you out.
-
-If you want to pay the author for this though, you can write to him at me@ankitdaf.com , and he will send across an Instamojo link.
 
 
 License
